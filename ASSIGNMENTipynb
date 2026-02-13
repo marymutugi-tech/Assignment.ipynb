@@ -1,0 +1,946 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/marymutugi-tech/Assignment.ipynb/blob/main/ASSIGNMENTipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "ac3b3aa3",
+      "metadata": {
+        "id": "ac3b3aa3"
+      },
+      "source": [
+        "# Group Assignment\n",
+        "`To be done in Group work`\n",
+        "\n",
+        "`every member must submit their work`"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "18b20ae6",
+      "metadata": {
+        "id": "18b20ae6"
+      },
+      "source": [
+        "### Q1 – Multi-Step Calculation\n",
+        "\n",
+        "Create variables:\n",
+        "\n",
+        "    length = 12\n",
+        "\n",
+        "    width = 5\n",
+        "\n",
+        "Then calculate the area and store it in a variable named area"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "id": "5db93b14",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5db93b14",
+        "outputId": "328b3240-6ef8-4af4-9aa0-2ffc7bda1253"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "60"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ],
+      "source": [
+        "# q1\n",
+        "# your work here\n",
+        "length = 12\n",
+        "width = 5\n",
+        "\n",
+        "area = length * width\n",
+        "\n",
+        "\n",
+        "\n",
+        "area"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "id": "93996843",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "93996843",
+        "outputId": "b21d8609-ede1-4b81-afad-a754cebd7ed7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "✅ Q1 Passed\n"
+          ]
+        }
+      ],
+      "source": [
+        "# q1 autotest\n",
+        "# auto test do not edit\n",
+        "assert area == 60, \"Area calculation incorrect\"\n",
+        "assert isinstance(area, int), \"Area must be integer\"\n",
+        "print(\"✅ Q1 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "1f17bcc3",
+      "metadata": {
+        "id": "1f17bcc3"
+      },
+      "source": [
+        "### Q2 – Compound Expression\n",
+        "\n",
+        "Create a variable `result` that stores:\n",
+        "\n",
+        "(10 + 5) * 2 - 8 / 4\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "id": "22b4899d",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "22b4899d",
+        "outputId": "6c19e075-04ca-4bff-b172-de9b905d8b10"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "28.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ],
+      "source": [
+        "# your work here\n",
+        "\n",
+        "result = (10 + 5) * 2 - 8 / 4\n",
+        "\n",
+        "\n",
+        "result"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "id": "d3602531",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d3602531",
+        "outputId": "fcc193ba-0ade-4611-9cdb-00f8a0c69210"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "✅ Q2 Passed\n"
+          ]
+        }
+      ],
+      "source": [
+        "assert result == (10 + 5) * 2 - 8 / 4, \"Expression calculation incorrect\"\n",
+        "print(\"✅ Q2 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "df6311aa",
+      "metadata": {
+        "id": "df6311aa"
+      },
+      "source": [
+        "### Q3 – Dynamic Swap Without Hardcoding\n",
+        "\n",
+        "Swap values of a and b without manually assigning numbers.\n",
+        "You are given a list of numbers:\n",
+        "Swap the first and last elements of the list without manually typing the numbers."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 11,
+      "id": "e82a5ffc",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e82a5ffc",
+        "outputId": "f4053855-d953-47a9-ff25-d1f9bfc9d2c3"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[7, 9, 2, 4]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ],
+      "source": [
+        "numbers = [4, 9, 2, 7]\n",
+        "\n",
+        "numbers[0], numbers[-1] = numbers[-1], numbers[0]\n",
+        "\n",
+        "numbers\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 12,
+      "id": "2c9bbc33",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2c9bbc33",
+        "outputId": "0091a9f8-e256-4ea8-9d5c-9e618a6a1947"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "✅ List element swap test passed\n"
+          ]
+        }
+      ],
+      "source": [
+        "expected = [7, 9, 2, 4]\n",
+        "assert numbers == expected, \"You must swap the first and last elements dynamically\"\n",
+        "print(\"✅ List element swap test passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "57bd6ec7",
+      "metadata": {
+        "id": "57bd6ec7"
+      },
+      "source": [
+        "### STRINGS"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "f3e1d8c3",
+      "metadata": {
+        "id": "f3e1d8c3"
+      },
+      "source": [
+        "### Q1 – Reverse String\n",
+        "\n",
+        "Create a variable reversed_word that stores the reverse of \"Python\"."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "8ad1ec68",
+      "metadata": {
+        "id": "8ad1ec68"
+      },
+      "outputs": [],
+      "source": [
+        "word = \"Python\"\n",
+        "# your code here\n",
+        "\n",
+        "reversed_word = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "1106e27a",
+      "metadata": {
+        "id": "1106e27a"
+      },
+      "outputs": [],
+      "source": [
+        "assert reversed_word == \"nohtyP\", \"String reversal incorrect\"\n",
+        "print(\"✅ Q1 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "878b9f36",
+      "metadata": {
+        "id": "878b9f36"
+      },
+      "source": [
+        "### Q-2 Count Vowels and Consonants\n",
+        "📝 Scenario\n",
+        "\n",
+        "given the word below\n",
+        "\n",
+        "Write logic to:\n",
+        "\n",
+        "    Count the number of vowels in the word → store in num_vowels\n",
+        "\n",
+        "    Count the number of consonants in the word → store in num_consonants\n",
+        "\n",
+        "    Ignore case (treat uppercase and lowercase the same)."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "88d010b2",
+      "metadata": {
+        "id": "88d010b2"
+      },
+      "outputs": [],
+      "source": [
+        "word = \"Programming\"\n",
+        "\n",
+        "# your work here\n",
+        "num_vowels = None\n",
+        "num_consonants = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "0bc8b266",
+      "metadata": {
+        "id": "0bc8b266"
+      },
+      "outputs": [],
+      "source": [
+        "# test cell do not edit\n",
+        "\n",
+        "expected_vowels = sum(1 for c in word.lower() if c in \"aeiou\")\n",
+        "expected_consonants = sum(1 for c in word.lower() if c.isalpha() and c not in \"aeiou\")\n",
+        "\n",
+        "assert num_vowels == expected_vowels, \"Vowel count incorrect\"\n",
+        "assert num_consonants == expected_consonants, \"Consonant count incorrect\"\n",
+        "\n",
+        "print(\"✅ Count vowels and consonants test passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "b4c767ef",
+      "metadata": {
+        "id": "b4c767ef"
+      },
+      "source": [
+        "## LISTS"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "1d64213e",
+      "metadata": {
+        "id": "1d64213e"
+      },
+      "source": [
+        "### Q1 – Remove Duplicates\n",
+        "given the variable below\n",
+        "Create unique_numbers with duplicates removed."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "e5930624",
+      "metadata": {
+        "id": "e5930624"
+      },
+      "outputs": [],
+      "source": [
+        "numbers = [1,2,2,3,4,4,5]\n",
+        "# your work here\n",
+        "\n",
+        "\n",
+        "unique_numbers = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "cac7637b",
+      "metadata": {
+        "id": "cac7637b"
+      },
+      "outputs": [],
+      "source": [
+        "# test cell do not edit\n",
+        "assert sorted(unique_numbers) == [1,2,3,4,5], \"Duplicates not removed correctly\"\n",
+        "print(\"✅ Q1 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "40e84143",
+      "metadata": {
+        "id": "40e84143"
+      },
+      "source": [
+        "### Q2 – Find Maximum Without max()\n",
+        "\n",
+        "Store the largest number from numbers and store in a variable largest"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "c3ae5d96",
+      "metadata": {
+        "id": "c3ae5d96"
+      },
+      "outputs": [],
+      "source": [
+        "# your work here\n",
+        "\n",
+        "largest = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "af8972cd",
+      "metadata": {
+        "id": "af8972cd"
+      },
+      "outputs": [],
+      "source": [
+        "# test_cell do not edit\n",
+        "assert largest == max(numbers), \"Largest number incorrect\"\n",
+        "print(\"✅ Q2 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "3fb99294",
+      "metadata": {
+        "id": "3fb99294"
+      },
+      "source": [
+        "### Q3 – Filter Even Numbers\n",
+        "\n",
+        "Create a list `evens` containing only even numbers from numbers"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "d6f1bbe1",
+      "metadata": {
+        "id": "d6f1bbe1"
+      },
+      "outputs": [],
+      "source": [
+        "# your work here\n",
+        "evens = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "7e8dff86",
+      "metadata": {
+        "id": "7e8dff86"
+      },
+      "outputs": [],
+      "source": [
+        "# test cell do not edit\n",
+        "assert evens == [n for n in numbers if n % 2 == 0], \"Even filtering incorrect\"\n",
+        "print(\"✅ Q3 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "9b3de8bd",
+      "metadata": {
+        "id": "9b3de8bd"
+      },
+      "source": [
+        "### DICTIONARIES"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "d964414f",
+      "metadata": {
+        "id": "d964414f"
+      },
+      "source": [
+        "### Q1 – Sum Values\n",
+        "\n",
+        "Given the variable below\n",
+        "Calculate total marks and store in total_marks"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "04609b6e",
+      "metadata": {
+        "id": "04609b6e"
+      },
+      "outputs": [],
+      "source": [
+        "marks = {\"Math\": 80, \"English\": 70, \"Science\": 90}\n",
+        "\n",
+        "# your work here\n",
+        "total_marks = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "44f1f236",
+      "metadata": {
+        "id": "44f1f236"
+      },
+      "outputs": [],
+      "source": [
+        "# test cell do not edit\n",
+        "assert total_marks == sum(marks.values()), \"Total marks incorrect\"\n",
+        "print(\"✅ Q1 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "e6b26029",
+      "metadata": {
+        "id": "e6b26029"
+      },
+      "source": [
+        "### Q2 – Find Highest Subject\n",
+        "\n",
+        "Store subject with highest mark in top_subject."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "f12402c1",
+      "metadata": {
+        "id": "f12402c1"
+      },
+      "outputs": [],
+      "source": [
+        "# your code here\n",
+        "top_subject = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "81e2494b",
+      "metadata": {
+        "id": "81e2494b"
+      },
+      "outputs": [],
+      "source": [
+        "# test cell do not edit\n",
+        "assert top_subject == max(marks, key=marks.get), \"Incorrect top subject\"\n",
+        "print(\"✅ Q2 Passed\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "17b1433c",
+      "metadata": {
+        "id": "17b1433c"
+      },
+      "source": [
+        "### Q3 – Add Grade Based on Average\n",
+        "\n",
+        "Calculate average and:\n",
+        "\n",
+        "    If average ≥ 75 → \"Pass\"\n",
+        "\n",
+        "    Else → \"Fail\"\n",
+        "\n",
+        "    Store in final_status."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "fed9ee77",
+      "metadata": {
+        "id": "fed9ee77"
+      },
+      "outputs": [],
+      "source": [
+        "# your code here\n",
+        "\n",
+        "final_status = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "0922e5af",
+      "metadata": {
+        "id": "0922e5af"
+      },
+      "outputs": [],
+      "source": [
+        "avg = sum(marks.values()) / len(marks)\n",
+        "\n",
+        "if avg >= 75:\n",
+        "    assert final_status == \"Pass\"\n",
+        "else:\n",
+        "    assert final_status == \"Fail\"\n",
+        "\n",
+        "print(\"✅ Q3 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "4c4e218f",
+      "metadata": {
+        "id": "4c4e218f"
+      },
+      "source": [
+        "## FLOW CONTROL\n",
+        "\n",
+        "### Q1 – Number Classification\n",
+        "\n",
+        "Given number n, classify:\n",
+        "\n",
+        "    Positive Even\n",
+        "\n",
+        "    Positive Odd\n",
+        "\n",
+        "    Negative\n",
+        "\n",
+        "    Zero\n",
+        "\n",
+        "Store result in classification."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "dd1e813c",
+      "metadata": {
+        "id": "dd1e813c"
+      },
+      "outputs": [],
+      "source": [
+        "\n",
+        "n = 378692374\n",
+        "\n",
+        "# your work here\n",
+        "\n",
+        "classification = None"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "abb68060",
+      "metadata": {
+        "id": "abb68060"
+      },
+      "outputs": [],
+      "source": [
+        "# test cell do not edit\n",
+        "if n == 0:\n",
+        "    assert classification == \"Zero\"\n",
+        "elif n > 0 and n % 2 == 0:\n",
+        "    assert classification == \"Positive Even\"\n",
+        "elif n > 0:\n",
+        "    assert classification == \"Positive Odd\"\n",
+        "else:\n",
+        "    assert classification == \"Negative\"\n",
+        "\n",
+        "print(\"✅ Q1 Passed\")\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "6abb1463",
+      "metadata": {
+        "id": "6abb1463"
+      },
+      "source": [
+        "## LOOPS"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "5d8c8186",
+      "metadata": {
+        "id": "5d8c8186"
+      },
+      "source": [
+        "You are given a list of movies with ratings from different users\n",
+        "\n",
+        "\n",
+        "Your task is to write logic that:\n",
+        "\n",
+        "    Calculates the average rating for each movie (rounded to 2 decimals) and stores in a new key \"average\" for each dictionary.\n",
+        "\n",
+        "    Finds all movies with average ≥ 4.5 and stores their titles in a list top_movies.\n",
+        "\n",
+        "    Finds the highest-rated movie (the one with the maximum average) and stores its title in highest_rated."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "2b7fa562",
+      "metadata": {
+        "id": "2b7fa562"
+      },
+      "outputs": [],
+      "source": [
+        "movies = [\n",
+        "    {\"title\": \"Inception\", \"ratings\": [5, 4, 5, 4]},\n",
+        "    {\"title\": \"Interstellar\", \"ratings\": [5, 5, 5, 4, 5]},\n",
+        "    {\"title\": \"Tenet\", \"ratings\": [4, 3, 4]},\n",
+        "    {\"title\": \"Dunkirk\", \"ratings\": [5, 5, 5, 5]}\n",
+        "]\n",
+        "\n",
+        "# your work here\n",
+        "\n",
+        "top_movies = None\n",
+        "highest_rated = None\n",
+        "movies = None # updated movies"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "87c632f7",
+      "metadata": {
+        "id": "87c632f7"
+      },
+      "outputs": [],
+      "source": [
+        "# test cell do not edit\n",
+        "# Step 1 – check averages\n",
+        "expected_averages = [4.5, 4.8, 3.67, 5.0]\n",
+        "for m, exp in zip(movies, expected_averages):\n",
+        "    assert abs(m[\"average\"] - exp) < 0.01, f\"Average for {m['title']} incorrect\"\n",
+        "\n",
+        "# Step 2 – check top_movies\n",
+        "expected_top = [\"Inception\", \"Interstellar\", \"Dunkirk\"]\n",
+        "assert set(top_movies) == set(expected_top), \"Top movies list incorrect\"\n",
+        "\n",
+        "# Step 3 – check highest_rated\n",
+        "assert highest_rated == \"Dunkirk\", \"Highest rated movie incorrect\"\n",
+        "\n",
+        "print(\"✅ Movie Ratings Analyzer test passed\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "62040be9",
+      "metadata": {
+        "id": "62040be9"
+      },
+      "source": [
+        "### FINAL CHALLENGE – Order Processing System"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "ba8ecff1",
+      "metadata": {
+        "id": "ba8ecff1"
+      },
+      "source": [
+        "You are building a mini order processing system for an online store.\n",
+        "\n",
+        "You are given:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "f445c9a7",
+      "metadata": {
+        "id": "f445c9a7"
+      },
+      "outputs": [],
+      "source": [
+        "orders = [\n",
+        "    {\"customer\": \"Alice\", \"items\": [(\"Laptop\", 800, 1), (\"Mouse\", 20, 2)]},\n",
+        "    {\"customer\": \"Bob\", \"items\": [(\"Phone\", 500, 1)]},\n",
+        "    {\"customer\": \"Charlie\", \"items\": []}\n",
+        "]"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "bb8f7bf0",
+      "metadata": {
+        "id": "bb8f7bf0"
+      },
+      "source": [
+        "Each item tuple contains:\n",
+        "(product_name, price, quantity)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "c16b50bd",
+      "metadata": {
+        "id": "c16b50bd"
+      },
+      "source": [
+        "### TASK\n",
+        "\n",
+        "**Create a function:**\n",
+        "\n",
+        "`process_orders(order_list)`\n",
+        "\n",
+        "\n",
+        "**The function must:**\n",
+        "\n",
+        "`For each customer:`\n",
+        "\n",
+        "    Calculate total order value\n",
+        "\n",
+        "    If total ≥ 1000 → apply 10% discount\n",
+        "\n",
+        "    If total == 0 → mark status as \"Empty Order\"\n",
+        "\n",
+        "    Otherwise → no discount\n",
+        "\n",
+        "**2.Return a dictionary with:**\n",
+        "```python\n",
+        "{\n",
+        "    \"processed_orders\": [\n",
+        "        {\n",
+        "            \"customer\": \"Alice\",\n",
+        "            \"total\": 760,\n",
+        "            \"discount_applied\": True\n",
+        "        },\n",
+        "        ...\n",
+        "    ],\n",
+        "    \"total_revenue\": X,\n",
+        "    \"largest_order\": \"Customer Name\"\n",
+        "}\n",
+        "```\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "e7b3b18f",
+      "metadata": {
+        "id": "e7b3b18f"
+      },
+      "outputs": [],
+      "source": [
+        "def process_orders(order_list):\n",
+        "    None #your code here\n",
+        "\n",
+        "\n",
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "471549ae",
+      "metadata": {
+        "id": "471549ae"
+      },
+      "outputs": [],
+      "source": [
+        "# Test cell do not edit\n",
+        "result = process_orders(orders)\n",
+        "\n",
+        "processed = result[\"processed_orders\"]\n",
+        "\n",
+        "# Check Alice (800 + 40 = 840 → no discount)\n",
+        "assert processed[0][\"total\"] == 840\n",
+        "assert processed[0][\"discount_applied\"] is False\n",
+        "\n",
+        "# Check Bob (500 → no discount)\n",
+        "assert processed[1][\"total\"] == 500\n",
+        "\n",
+        "# Check Charlie (empty order)\n",
+        "assert processed[2][\"total\"] == 0\n",
+        "assert processed[2][\"discount_applied\"] is False\n",
+        "\n",
+        "# Revenue check\n",
+        "expected_revenue = 840 + 500 + 0\n",
+        "assert result[\"total_revenue\"] == expected_revenue\n",
+        "\n",
+        "# Largest order check\n",
+        "assert result[\"largest_order\"] == \"Alice\"\n",
+        "print(\"✅ Order Processing System test passed\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "aa3d0b0c",
+      "metadata": {
+        "id": "aa3d0b0c"
+      },
+      "source": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "venv",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.12.3"
+    },
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
